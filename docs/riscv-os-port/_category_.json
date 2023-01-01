@@ -1,0 +1,8 @@
+{
+  "label": "Risc-V 操作系统移植",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "FibOS 是一个基于 RISC-V 架构的操作系统，由 MOS 从 R3000 移植至 SiFive FU540-C000 ，笔者整理了 MOS 的代码结构，重新编写部分 Makefile 编译内核，并对原系统功能进行了优化，可运行在 QEMU 硬件模拟器上。"
+  }
+}
