@@ -8,6 +8,7 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
   title: 'yufoo1\'s Site',
   tagline: 'With Math, Love Programming.',
   url: 'https://yufoo1.github.io',
@@ -85,7 +86,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/yufoo1',
             label: 'GitHub',
@@ -136,7 +137,12 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} yufoo1's Site, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} yufoo1's Site.`,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       prism: {
         theme: lightCodeTheme,
