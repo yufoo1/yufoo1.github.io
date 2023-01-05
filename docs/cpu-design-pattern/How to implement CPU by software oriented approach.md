@@ -1,16 +1,16 @@
 # How to Implement CPU by Software Oriented Approach
 
-Considering to implement highly configurable CPU, we should use a very `software oriented approach` , in which there are few things that is fixed. This article borrows a lot from VexRiscv, a RISC-V CPU written in `SpinalHDL` , [source code is here](https://github.com/SpinalHDL/VexRiscv). In VecRiscv, nearly everything is plugin based, which means we can simply expand it or shrink it.  Besides, there is an automatic tool allowing plugins to insert data at a given stage and other plugins to read it in another stage. There is also a service system which provides a very dynamic framework to handle exception.
+Considering to implement highly configurable CPU, we should use a very `software oriented approach` , in which there are few things that is fixed. This article borrows a lot from VexRiscv, a RISC-V CPU written in `SpinalHDL` , [source code is here](https://github.com/SpinalHDL/VexRiscv). In VexRiscv, nearly everything is plugin based, which means we can simply expand it or shrink it.  Besides, there is an automatic tool allowing plugins to insert data at a given stage and other plugins to read it in another stage. There is also a service system which provides a very dynamic framework to handle exception.
 
-I will try to understand this software oriented design approach and how VecRiscv use it, this article will record some thoughts of myself. Then, I will design my own CPU in `Chisel` through this unique approach.
+I will try to understand this software oriented design approach and how VexRiscv use it, this article will record some thoughts of myself. Then, I will design my own CPU in `Chisel` through this unique approach.
 
-## Simple Introduction of VecRiscv Architecture
+## Simple Introduction of VexRiscv Architecture
 
-VecRiscv is implemented via a 5 stage in-order pipeline and it's function can be extended through lots of optional and complementary plugins. The Extensibility of VecRiscv is so superior that we can turn on or turn off parts of this CPU directly through it's well-designed plugin system and add new functionalities or instructions without modifying any source of this CPU.
+VexRiscv is implemented via a 5 stage in-order pipeline and it's function can be extended through lots of optional and complementary plugins. The Extensibility of VexRiscv is so superior that we can turn on or turn off parts of this CPU directly through it's well-designed plugin system and add new functionalities or instructions without modifying any source of this CPU.
 
 ### Gen Smallest
 
-When we choose to generate VecRiscv in a smallest configuration, it firstly define a method which will return a instance of CPU. This method has only one parameter that representing the configuration we expected. The configuration is described through an object, which apply method need a list of plugins and we can also configure plugin before pushing it into that plugin list. By the way, the default option of VecRiscv is with memory stage and write back stage and `GenSmallest` needs:
+When we choose to generate VexRiscv in a smallest configuration, it firstly define a method which will return a instance of CPU. This method has only one parameter that representing the configuration we expected. The configuration is described through an object, which apply method need a list of plugins and we can also configure plugin before pushing it into that plugin list. By the way, the default option of VexRiscv is with memory stage and write back stage and `GenSmallest` needs:
 
 * IBusSimplePlugin: implements the CPU frontend via a very simple and neutral memory interface out of CPU.
 * DBusSimplePlugin: implements the load and store instructions via a simple memory bus out of CPU.
@@ -27,7 +27,7 @@ When we choose to generate VecRiscv in a smallest configuration, it firstly defi
 Take `RegFilePlugin` as an example. RegFilePlugin has 8 configuration parameters and in `GenSmallest` only 2 of them are configured, `regFileReadyKind` is configured to `Sync` and `zeroBoot` is configured to `false`, other parameters use default configuration. Every plugin extend the trait `Plugin and override two important methods`, `setup(pipeline: T)` and `build(pipeline: T)`.
 
 ```scala
-override def setup(pipeline: VecRiscv): Unit = {
+override def setup(pipeline: VexRiscv): Unit = {
     import pipeline.config._
     val decoderService = pipeline.service(classOf[DecoderService])
     decoderService.addDefault(RS1_USE,False)
@@ -36,7 +36,7 @@ override def setup(pipeline: VecRiscv): Unit = {
 }
 ```
 
-In the code above, pipeline is instance of VecRiscv, which extends trait `Pipeline`. pipeline has a method `service`, which can filter the class extended it's parameter, a trait, or filter the same class and superclass. In the example above, DecoderService is a trait and  DecodeSimplePlugin extends it. Therefore, we can get the instance of DecodeSimplePlugin if we call pipeline.service\[T](clazz: Class[T]). Then, this example calls decoderService.addDefault(key: Stageable[_ <: BaseType], value: Any). The method addDefault is overrided in DecodeSimplePlugin and it can add configuration into DecodeSimplePlugin, which can be known by other plugin.
+In the code above, pipeline is instance of VexRiscv, which extends trait `Pipeline`. pipeline has a method `service`, which can filter the class extended it's parameter, a trait, or filter the same class and superclass. In the example above, DecoderService is a trait and  DecodeSimplePlugin extends it. Therefore, we can get the instance of DecodeSimplePlugin if we call pipeline.service\[T](clazz: Class[T]). Then, this example calls decoderService.addDefault(key: Stageable[_ <: BaseType], value: Any). The method addDefault is overrided in DecodeSimplePlugin and it can add configuration into DecodeSimplePlugin, which can be known by other plugin.
 
 The method `build` of RegFilePlugin is complicated and we take the build of `IntAluPlugin` as another example.
 
