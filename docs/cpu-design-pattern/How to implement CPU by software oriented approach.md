@@ -24,7 +24,7 @@ When we choose to generate VecRiscv in a smallest configuration, it firstly defi
 * BranchPlugin: implements branch and jump instructions with primitives used  by the CPU frontend to implement branch prediction.
 * YamlPlugin: offers a service to other plugins to generate a Yaml file describing the CPU configuration.
 
-Take `RegFilePlugin` as an example. RegFilePlugin has 8 configuration parameters and in `GenSmallest` only 2 of them are configured, `regFileReadyKind` is configured to `Sync` and `zeroBoot` is configured to `false`, other parameters use default configuration. Every plugin extend the trait `Plugin and override two important methods, `setup(pipeline: T)` and `build(pipeline: T)`.
+Take `RegFilePlugin` as an example. RegFilePlugin has 8 configuration parameters and in `GenSmallest` only 2 of them are configured, `regFileReadyKind` is configured to `Sync` and `zeroBoot` is configured to `false`, other parameters use default configuration. Every plugin extend the trait `Plugin and override two important methods`, `setup(pipeline: T)` and `build(pipeline: T)`.
 
 ```scala
 override def setup(pipeline: VecRiscv): Unit = {
