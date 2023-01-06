@@ -1,6 +1,6 @@
 # How to Implement CPU by Software Oriented Approach
 
-Considering to implement highly configurable CPU, we should use a very `software oriented approach` , in which there are few things that is fixed. This article borrows a lot from VexRiscv, a RISC-V CPU written in `SpinalHDL` , [source code is here](https://github.com/SpinalHDL/VexRiscv). In VexRiscv, nearly everything is plugin based, which means we can simply expand it or shrink it.  Besides, there is an automatic tool allowing plugins to insert data at a given stage and other plugins to read it in another stage. There is also a service system which provides a very dynamic framework to handle exception.
+Considering to implement highly configurable CPU, we should use a very `software oriented approach` , in which there are few things that are fixed. This article borrows a lot from VexRiscv, a RISC-V CPU written in `SpinalHDL` , [source code is here](https://github.com/SpinalHDL/VexRiscv). In VexRiscv, nearly everything is plugin based, which means we can simply expand it or shrink it.  Besides, there is an automatic tool allowing plugins to insert data at a given stage and other plugins to read it in another stage. There is also a service system which provides a very dynamic framework to handle exception.
 
 I will try to understand this software oriented design approach and how VexRiscv use it, this article will record some thoughts of myself. Then, I will design my own CPU in `Chisel` through this unique approach.
 
