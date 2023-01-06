@@ -5,7 +5,7 @@
 At first, download dependencies through git and configure environment variables. My environment is MacOS and if you are using Windows or Linux, just only notice slight differences in the configuration of environment variables.
 
 ```shell
-
+# download dependency
 git clone -b beta https://github.com/flutter/flutter.git
 
 # add to .bash_profile
@@ -23,12 +23,12 @@ flutter doctor
 flutter create demo
 
 # run your demo
-cd demo && flutter run 
+cd demo && flutter run
 ```
 
 ## Use Simulator
 
-you may have noticed that when you type `flutter run` in command line, you're asked to choose one device to display, such `chrome`(web) or macOS(desktop). If you have downloaded `Android Studio` / `Xcode`, even `QEMU`, you can choose them to display in your IDE simply, like Virtual Studio Code. Just download `flutter` plugin, click on the bottom right(in Virtual Studio Code) and then, type `flutter run`. 
+you may have noticed that when you type `flutter run` in command line, you're asked to choose one device to display, such `chrome`(web) or macOS(desktop). If you have downloaded `Android Studio` / `Xcode`, even `QEMU`, you can choose them to display in your IDE simply, like Virtual Studio Code. Just download `flutter` plugin, click on the bottom right(in Virtual Studio Code) and then, type `flutter run`.
 
 ## Perform Hot Reload
 
