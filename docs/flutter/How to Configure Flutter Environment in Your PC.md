@@ -29,6 +29,12 @@ cd demo && flutter run
 ## Use Simulator
 
 you may have noticed that when you type `flutter run` in command line, you're asked to choose one device to display, such `chrome`(web) or macOS(desktop). If you have downloaded `Android Studio` / `Xcode`, even `QEMU`, you can choose them to display in your IDE simply, like Virtual Studio Code. Just download `flutter` plugin, click on the bottom right(in Virtual Studio Code) and then, type `flutter run`.
+![](img/1.jpg)
+
+* in Xcode simulator
+![](img/2.jpg)
+* in Chrome
+![](img/3.jpg)
 
 ## Perform Hot Reload
 
