@@ -21,7 +21,7 @@ Then, what you should do is configure `MySQL5` on your server. Remember, don't u
 docker pull mysql:5.x
 ```
 
-[//]: # (Then, you can refer to [Deployment of MySQL]&#40;yufoo1.github.io/docs/web-app-development/Deploy%20Your%20Own%20Website%20and%20Database%20on%20the%20Server#deployment-of-mysql&#41; to finish the configuration.)
+Then, you can refer to [Deployment of MySQL](https://yufoo1.github.io/docs/web-app-development/Deploy%20Your%20Own%20Website%20and%20Database%20on%20the%20Server#deployment-of-mysql) to finish the configuration.
 
 ## Implement Connection Class
 
