@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Use JDBC to Connect MySQL in Native Android App
 
 I had a lot of trouble when developing native Android app with JDBC and this article will teach you how to connect to `MySQL` using JDBC successfully.
@@ -12,13 +15,13 @@ After downloading the jar package of `MySQL Connector/J 5.1.x`, you should put t
 
 ## Deploy MySQL5
 
-Then, what you should do is configure `MySQL5` on your server. Remember, don't use the latest version of `MySQL`. 
+Then, what you should do is configure `MySQL5` on your server. Remember, don't use the latest version of `MySQL`.
 
 ```mysql
 docker pull mysql:5.x
 ```
 
-Then, you can refer to [Deployment of MySQL](yufoo1.github.io/docs/web-app-development/Deploy%20Your%20Own%20Website%20and%20Database%20on%20the%20Server#deployment-of-mysql) to finish the configuration.
+[//]: # (Then, you can refer to [Deployment of MySQL]&#40;yufoo1.github.io/docs/web-app-development/Deploy%20Your%20Own%20Website%20and%20Database%20on%20the%20Server#deployment-of-mysql&#41; to finish the configuration.)
 
 ## Implement Connection Class
 

@@ -23,7 +23,7 @@ npx create-docusaurus@latest my-website classic --typescript
 
 ## Deploy Through GitHub
 
-If you want to deploy your site through Github, you should firstly create a repository named your username.github.io. Since your site isn't built with `Jekyll`, you should write `CI/CD` to implement deployment automatically. Here is the teaplate for `CI/CD`:
+If you want to deploy your site through GitHub, you should firstly create a repository named your username.github.io. Since your site isn't built with `Jekyll`, you should write `CI/CD` to implement deployment automatically. Here is the teaplate for `CI/CD`:
 
 ```yaml
 name: "Deploy"

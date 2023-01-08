@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Configure Flutter Environment in Your PC
 
 ## Download Dependency
