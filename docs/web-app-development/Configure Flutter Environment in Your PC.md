@@ -1,4 +1,4 @@
-# How to Configure Flutter Environment in Your PC
+# Configure Flutter Environment in Your PC
 
 ## Download Dependency
 
