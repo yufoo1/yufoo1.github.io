@@ -24,7 +24,7 @@ docker pull mysql
 * Run image of MySQL in docker and enable remote service.
 
 ```shell
-# Run image of mysql in docker
+# Run img of mysql in docker
 docker run --name NAME OF CONTAINER -d -p HOST PORT:CONTAINER PORT -e MYSQL_ROOT_PASSWORD=PASSWORD mysql
 # Check whether docker starts and corresponding container ID
 docker ps
@@ -75,7 +75,7 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build .
 * Write `Dockerfile`.
 
 ```dockerfile
-# Pull image
+# Pull img
 FROM ubuntu:22.04
 # Create Directory, can be ignored
 RUN mkdir /build
