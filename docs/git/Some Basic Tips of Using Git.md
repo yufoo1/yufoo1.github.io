@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Some Basic Tips of Using Git
 
 ## Files State

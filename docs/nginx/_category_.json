@@ -1,0 +1,8 @@
+{
+  "label": "Nginx",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Some notes when studying nginx."
+  }
+}

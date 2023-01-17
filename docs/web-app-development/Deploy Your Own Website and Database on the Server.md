@@ -123,13 +123,10 @@ npm run build
 # install nginx
 sudo apt-get install nginx
 
-# Modify nginx configuration file, the specific changes are as follows
+# Modify nginx configuration file, add one more server as follows
 server {
                 listen PORT LISTENED BY NGINX;
-                listen 80;
-                server_name localhost;
                 root PATH OF DIST PATh;
-
                 location / {
                 }
 

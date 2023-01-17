@@ -71,10 +71,10 @@ err = global.MysqlDb.Select(&idArr, "select id from user_login where username=?"
 // Insert
 r, err := global.MysqlDb.Exec("insert into user_login(username, password, phone)values(?, ?, ?)", username, password, phone)
 
-// delete
+// Delete
 r, err := global.MysqlDb.Exec("delete from user_login where username=?", username)
 
-// update
+// Update
 r, err = global.MysqlDb.Exec("update user_login set username=? where id=?", username, id)
 ```
 
