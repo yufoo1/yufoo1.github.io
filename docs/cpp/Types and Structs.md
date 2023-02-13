@@ -64,7 +64,7 @@ Student s = {"Ken", "CA", 21};
 
 ### Pair
 
-`std::pair` is an STL built-in struct with two fields of any type. It is a `template`, which means you specify the types of the fields inside <> for each pair object you make. The fields in `std::pair`s are named `first` and `second`.
+`std::pair` is an STL built-in struct with two fields of any type. It is a `template`, which means you specify the types of the fields inside < > for each pair object you make. The fields in `std::pair`s are named `first` and `second`.
 
 ```cpp
 std::pair<int, string> numSuffix = {1, "st"};
