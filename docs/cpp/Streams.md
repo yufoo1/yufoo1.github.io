@@ -52,7 +52,7 @@ Another is `by source or destination`.
   
   * `std::ostringstream`
 
-### Output Streams
+## Output Streams
 
 Output streams have type `std::ostream` and can only send data to the stream. It interacts with the stream using the `<<` operator and converts any type into string and sends it to the stream.
 
