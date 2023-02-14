@@ -130,5 +130,3 @@ If you only want to read or write data:
 * read only: `std::istringstream`, gives any data type to the istringstream, it'll store it as a string.
 
 * write only: `std::ostringstream`, makes an ostringstream out of a string, read from it word / type by word / type.
-
-
