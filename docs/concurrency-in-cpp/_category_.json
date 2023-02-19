@@ -1,0 +1,8 @@
+{
+  "label": "Concurrency in Cpp",
+  "position": 13,
+  "link": {
+    "type": "generated-index",
+    "description": "Some notes when studying concurrency in c++."
+  }
+}
