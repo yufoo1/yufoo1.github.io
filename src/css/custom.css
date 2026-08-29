@@ -1,0 +1,113 @@
+@import 'katex/dist/katex.min.css';
+
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 30%);
+}
+
+/* Multi-level paper directory on the docs landing page. */
+#paper-index {
+  margin-top: 2.75rem;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+#paper-index + ul {
+  margin: 1.25rem 0 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgb(56 189 248 / 24%);
+  border-radius: 1.25rem;
+  background: #f0f9ff;
+  box-shadow: 0 16px 45px rgb(14 116 144 / 8%);
+  list-style: none;
+}
+
+#paper-index + ul ul {
+  margin: 0.7rem 0 0.2rem 0.45rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid rgb(14 165 233 / 22%);
+  list-style: none;
+}
+
+#paper-index + ul li {
+  position: relative;
+  margin: 0.55rem 0;
+}
+
+#paper-index + ul ul > li::before {
+  position: absolute;
+  width: 0.65rem;
+  top: 0.72rem;
+  left: -1.25rem;
+  border-top: 1px solid rgb(14 165 233 / 28%);
+  content: '';
+}
+
+#paper-index + ul strong {
+  color: #0c4a6e;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+#paper-index + ul a {
+  display: inline-flex;
+  padding: 0.62rem 0.85rem;
+  border: 1px solid rgb(14 165 233 / 16%);
+  border-radius: 0.75rem;
+  background: rgb(255 255 255 / 88%);
+  box-shadow: 0 7px 20px rgb(14 116 144 / 7%);
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+#paper-index + ul a:hover {
+  border-color: rgb(14 165 233 / 42%);
+  box-shadow: 0 10px 26px rgb(14 116 144 / 12%);
+  transform: translateY(-1px);
+}
+
+[data-theme='dark'] #paper-index {
+  color: #7dd3fc;
+}
+
+[data-theme='dark'] #paper-index + ul {
+  border-color: rgb(56 189 248 / 16%);
+  background: #0b2638;
+  box-shadow: 0 16px 45px rgb(0 0 0 / 18%);
+}
+
+[data-theme='dark'] #paper-index + ul ul {
+  border-left-color: rgb(125 211 252 / 18%);
+}
+
+[data-theme='dark'] #paper-index + ul ul > li::before {
+  border-top-color: rgb(125 211 252 / 22%);
+}
+
+[data-theme='dark'] #paper-index + ul strong {
+  color: #bae6fd;
+}
+
+[data-theme='dark'] #paper-index + ul a {
+  border-color: rgb(125 211 252 / 13%);
+  background: rgb(8 47 73 / 62%);
+}

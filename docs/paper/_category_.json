@@ -1,0 +1,8 @@
+{
+  "label": "论文导读",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "按研究方向浏览论文导读"
+  }
+}
