@@ -13,5 +13,7 @@ sidebar_position: 1
 <!-- paper-index:start -->
 - **具身智能**
   - **模型**
-    - [StreamVLN](./paper/embodied-ai/model/streamvln/streamvln.md)
+    - [StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling](./paper/embodied-ai/model/streamvln/streamvln.md)
+  - **算法**
+    - [Self-Improving Vision-Language-Action Models with Data Generation via Residual RL](./paper/embodied-ai/algo/pld-nvidia/pld-nvidia.md)
 <!-- paper-index:end -->

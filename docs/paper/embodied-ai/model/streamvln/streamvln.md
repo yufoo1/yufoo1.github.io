@@ -1,3 +1,7 @@
+---
+sidebar_label: "StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling"
+---
+
 # StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling
 
 ## 整体架构
