@@ -42,7 +42,7 @@ sidebar_label: "EBRL: Asynchronous Embodied RL by Multi-Grained Resource Managem
 
 ## 细粒度资源管理
 
-EBRL 把 CPU 和 GPU 抽象为统一的资源池：GPU 通过 MPS 按 SM 百分比和显存预算切分给各 stage，需要硬件隔离时也可以使用 MIG；CPU 则以核为单位绑定 worker，避免 OS 随意迁移线程。
+EBRL 把 CPU 和 GPU 抽象为统一的资源池：GPU 通过 NVIDIA Multi-Process Service（MPS）按 SM 百分比和显存预算切分给各 stage，需要硬件隔离时也可以使用 Multi-Instance GPU（MIG）；CPU 则以核为单位绑定 worker，避免 OS 随意迁移线程。
 
 在此基础上，EBRL 离线 profile 各 stage 在不同配额和 batch size 下的吞吐。由于 simulation 与 generation 流水化，rollout 又与 training 重叠，端到端吞吐取决于最慢的 stage：
 
