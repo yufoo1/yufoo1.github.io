@@ -22,4 +22,6 @@ Run `npm run update-paper-index` from the repository root. The generator reads M
 
 Inspect the generated diff to confirm the nesting and labels match the filesystem. Do not hand-edit the generated block; correct the source title or `_category_.json` instead and rerun the command.
 
+Then update the paper table in `README.md` so it lists the same papers in the same order, each with its category path, a link to the note, and a link to the official source.
+
 Before completion, run `npm run check-paper-index`, then follow the `docs-preflight` skill. Do not commit or push without explicit user authorization.
