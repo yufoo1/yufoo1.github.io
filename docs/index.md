@@ -21,4 +21,5 @@ sidebar_position: 1
   - **系统**
     - **强化学习**
       - [EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management](./paper/embodied-ai/infra/rl/ebrl-nju/ebrl-nju.md)
+      - [RL-VLA³: A Flexible and Asynchronous Reinforcement Learning Framework for VLA Training](./paper/embodied-ai/infra/rl/rl-vla3-pku/rl-vla3-pku.md)
 <!-- paper-index:end -->

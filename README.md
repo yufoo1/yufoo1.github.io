@@ -17,6 +17,7 @@ index in `docs/index.md`; see `AGENTS.md` for the workflow of adding a paper.
 | 具身智能 / 模型 / 视觉-语言-导航模型 | [StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling](docs/paper/embodied-ai/model/vln/streamvln/streamvln.md) | [arXiv:2507.05240](https://arxiv.org/abs/2507.05240) |
 | 具身智能 / 算法 / 强化学习 | [Self-Improving Vision-Language-Action Models with Data Generation via Residual RL](docs/paper/embodied-ai/algo/rl/pld-nvidia/pld-nvidia.md) | [arXiv:2511.00091](https://arxiv.org/abs/2511.00091) |
 | 具身智能 / 系统 / 强化学习 | [EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management](docs/paper/embodied-ai/infra/rl/ebrl-nju/ebrl-nju.md) | [arXiv:2609.27547](https://arxiv.org/abs/2609.27547) |
+| 具身智能 / 系统 / 强化学习 | [RL-VLA³: A Flexible and Asynchronous Reinforcement Learning Framework for VLA Training](docs/paper/embodied-ai/infra/rl/rl-vla3-pku/rl-vla3-pku.md) | [arXiv:2602.05765](https://arxiv.org/abs/2602.05765) |
 
 ## Development
 
