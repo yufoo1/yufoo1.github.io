@@ -22,4 +22,10 @@ sidebar_position: 1
     - **强化学习**
       - [EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management](./paper/embodied-ai/infra/rl/ebrl-nju/ebrl-nju.md)
       - [RL-VLA³: A Flexible and Asynchronous Reinforcement Learning Framework for VLA Training](./paper/embodied-ai/infra/rl/rl-vla3-pku/rl-vla3-pku.md)
+- **系统**
+  - **形式化验证**
+    - [Anvil: Verifying Liveness of Cluster Management Controllers](./paper/system/verification/anvil-uiuc/anvil-uiuc.md)
+    - [Smart Casual Verification of the Confidential Consortium Framework](./paper/system/verification/ccf-microsoft/ccf-microsoft.md)
+    - [Sharding the State Machine: Automated Modular Reasoning for Complex Concurrent Systems](./paper/system/verification/ironsync-cmu/ironsync-cmu.md)
+    - [Welder: Compositional Liveness Verification of Cluster Control Planes](./paper/system/verification/welder-uiuc/welder-uiuc.md)
 <!-- paper-index:end -->
