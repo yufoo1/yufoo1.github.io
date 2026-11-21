@@ -127,6 +127,13 @@ async function readDirectory(directory) {
       `Leaf paper directory ${path.relative(repositoryRoot, directory)} must contain one same-named Markdown file or define _category_.json.`,
     );
   }
+  if (
+    !category.explicit &&
+    children.length === 1 &&
+    children[0].type === 'document'
+  ) {
+    category.position = children[0].position;
+  }
   return {type: 'category', ...category, children};
 }
 
