@@ -4,6 +4,10 @@ sidebar_label: "RL-VLA³: A Flexible and Asynchronous Reinforcement Learning Fra
 
 # RL-VLA$^3$: A Flexible and Asynchronous Reinforcement Learning Framework for VLA Training
 
+发表于 COLM '26（[arXiv:2602.05765](https://arxiv.org/abs/2602.05765)）。
+
+作者：Haoran Sun¹、Yongjian Guo²、Zhong Guan³、Shuai Di⁴、Xiaodong Bai⁴、Jing Long¹⁴、Tianyun Zhao²、Mingxi Luo⁴、Xiaotie Deng¹、Xu Chu¹、Hongke Zhao³、Likang Wu³、Xi Xiao²、Sheng Wen²、Yicheng Gong⁴、Junwu Xiong⁴（¹北京大学，²清华大学，³天津大学，⁴京东科技）
+
 ## 动机和挑战
 
 现有 VLA 的 RL 框架沿用了 LLM RL 的同步设计，把整个 rollout 当作不可分割的单元，在数据采集和策略优化之间严格交替：

@@ -4,6 +4,10 @@ sidebar_label: "EBRL: Asynchronous Embodied RL by Multi-Grained Resource Managem
 
 # EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management
 
+arXiv 预印本（[arXiv:2609.27547](https://arxiv.org/abs/2609.27547)）。
+
+作者：Liang Mi¹、Weijun Wang²、Bowen Gao¹、Tianze Yu¹、Zixu Hao²、Han Xiao³、Xin Ding⁴、Mingzhe Huang²、Xin He³、Lu Shi²、Hao Wu¹、Haipeng Dai¹、Guihai Chen¹、Yunxin Liu²、Ting Cao²（¹南京大学，²清华大学智能产业研究院，³南京邮电大学，⁴中国科学技术大学）
+
 ## 动机和挑战
 
 具身 RL 包含 simulation、generation 和 training 三个 stage，simulation 依赖 CPU 与 GPU 协同，后两者则重度依赖 GPU，但现有系统都以整卡为粒度把资源分配给某个 stage。EBRL 的 motivation 建立于三点：

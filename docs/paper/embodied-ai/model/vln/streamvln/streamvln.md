@@ -4,6 +4,10 @@ sidebar_label: "StreamVLN: Streaming Vision-and-Language Navigation via SlowFast
 
 # StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling
 
+发表于 ICRA '26（[arXiv:2507.05240](https://arxiv.org/abs/2507.05240)）。
+
+作者：Meng Wei¹²、Chenyang Wan¹³、Xiqian Yu¹、Tai Wang¹、Yuqiang Yang¹、Xiaohan Mao¹⁴、Chenming Zhu¹²、Wenzhe Cai¹、Hanqing Wang¹、Yilun Chen¹、Xihui Liu²、Jiangmiao Pang¹（¹上海人工智能实验室，²香港大学，³浙江大学，⁴上海交通大学）
+
 ## 整体架构
 
 StreamVLN 是流式的 VLN 框架，采用快慢混合上下文建模策略以支持交错出现的视觉、语言和动作输入，并进行多模态推理。快链路通过针对活跃上下文的滑动窗口机制，加快了动作生成。慢链路则通过一种三维感知的 token 剪枝策略，对历史视觉状态进行压缩。

@@ -1,5 +1,9 @@
 # Self-Improving Vision-Language-Action Models with Data Generation via Residual RL
 
+arXiv 预印本（[arXiv:2511.00091](https://arxiv.org/abs/2511.00091)）。
+
+作者：Wenli Xiao¹²、Haotian Lin²、Andy Peng¹³、Haoru Xue¹³、Tairan He¹²、Yuqi Xie¹、Fengyuan Hu¹、Jimmy Wu¹、Zhengyi Luo¹、Linxi "Jim" Fan¹、Guanya Shi²、Yuke Zhu¹⁴（¹NVIDIA，²Carnegie Mellon University，³UC Berkeley，⁴UT Austin）
+
 ![PLD 方法整体流程](photo/pld.png)
 
 如图所示，为了缓解 SFT 数据少的问题，本文提出了 PLD 方法，即 Probe、Learn、Distill，是一种三阶段即插即用的框架，可以通过残差 RL 和分布感知的数据采集来改进 VLA 模型。第一阶段专家获取会冻结 VLA 权重，通过 off-policy RL 训练轻量的残差策略，用于接管基础 policy 失效的状态。第二阶段数据收集会采取一种混合 rollout 方案，先让基础 VLA 执行，再由残差策略接管，这样纠正动作主要发生在基础 VLA 经常访问的状态上，使采集轨迹既贴近基础 VLA 的真实运行分布，又包含失败后的恢复行为。第三阶段微调中，经过筛选的轨迹通过标准 SFT 被蒸馏回通用模型，该方法同时适用于 flow-matching 架构和自回归架构的输出 head。

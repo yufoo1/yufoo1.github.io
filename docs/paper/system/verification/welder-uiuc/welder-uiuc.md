@@ -4,6 +4,10 @@ sidebar_label: "Welder: Compositional Liveness Verification of Cluster Control P
 
 # Welder: Compositional Liveness Verification of Cluster Control Planes
 
+发表于 [SOSP '26](https://dl.acm.org/doi/10.1145/3830418.3843868)。
+
+作者：Zhizhen Cathy Cai¹、Cody Rivera²、Nikhil Date¹、Tej Chajed²、Tianyin Xu¹（¹University of Illinois Urbana-Champaign，²University of Wisconsin-Madison）
+
 ## 动机和挑战
 
 Kubernetes（K8s）控制面由多个 controller 组成，每个 controller 循环执行 reconcile，将集群当前状态驱动到用户声明的期望状态；controller 之间不直接通信，只经 API server 读写共享状态。KubeRay、Kubeflow 等 AI 作业 operator 均属此类。
