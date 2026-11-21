@@ -1,0 +1,8 @@
+{
+  "label": "推理引擎",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "大模型推理引擎相关论文导读"
+  }
+}
