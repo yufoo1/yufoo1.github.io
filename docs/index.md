@@ -27,6 +27,8 @@ sidebar_position: 1
     - [Anvil: Verifying Liveness of Cluster Management Controllers](./paper/system/verification/anvil-uiuc/anvil-uiuc.md)
     - [Smart Casual Verification of the Confidential Consortium Framework](./paper/system/verification/ccf-microsoft/ccf-microsoft.md)
     - [Sharding the State Machine: Automated Modular Reasoning for Complex Concurrent Systems](./paper/system/verification/ironsync-cmu/ironsync-cmu.md)
+    - [Specula: Scaling formal specifications for autonomous model checking of system code](./paper/system/verification/specula/specula.md)
+    - [TLAPS-Bench: Formally Proving Correctness of Real-World System Specifications with TLA+ Proof System](./paper/system/verification/tlaps-bench/tlaps-bench.md)
     - [Welder: Compositional Liveness Verification of Cluster Control Planes](./paper/system/verification/welder-uiuc/welder-uiuc.md)
 - **大模型**
   - **模型**
